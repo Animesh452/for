@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animesh Kumar — Brickanta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <p class="letterhead mono">Prepared for Brickanta — Software / AI Engineering</p>
+    <h1 class="name">Animesh Kumar</h1>
+    <p class="positioning">AI/ML engineer who ships agentic systems end to end, from retrieval design to production deployment.</p>
+  </header>
+
+  <section class="block" id="why">
+    <h2 class="block-title"><span class="idx">1</span> Why Brickanta</h2>
+    <div class="prose">
+<p>Brickanta's description of the work matches my role at Trinity Tree, a clinical psychology practice, where I co-built an LLM pipeline that publishes nothing until a second model has checked it against source content and a clinician has approved it. Most of the hard work came after launch, when real reviewers and email systems behaved in ways the design hadn't planned for.</p><p>Forward-deployed work is the part I want more of. On a case-tracking system there, asking the person who would use it how they worked changed more of the design than any technical decision. I expect tender documents and historical estimates to be messier than the free-text notes I've parsed so far, and that's the appeal. I'd rather build something that flags what it can't read than something that guesses.</p>    </div>
+  </section>
+
+  <section class="block" id="work">
+    <h2 class="block-title"><span class="idx">2</span> Relevant work</h2>
+    <div class="work-list">
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Social media pipeline</h3>
+        <p class="work-why">A live LLM system with real reviewers, where grounding, reliability and observability were the actual work.</p>
+        <p class="work-desc">Co-built a LangGraph pipeline on Google Cloud that drafts daily social posts, fact-checks them with a second provider's model, and publishes only after a clinician approves by email.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">LangGraph</li><li class="mono">OpenAI GPT-5.5</li><li class="mono">Gemini 3.5 Flash (Vertex AI)</li><li class="mono">Cloud Run</li><li class="mono">Firestore</li><li class="mono">LangSmith</li><li class="mono">Docker</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>MatchDay</h3>
+        <p class="work-why">Built solo and still developing it, with a live demo, a public repo, and an eval that turned a silent retrieval failure into a measured fix.</p>
+        <p class="work-desc">Conversational football agent on Cloud Run: custom 21-tool Gemini loop with MongoDB MCP and evaluated Discovery Engine RAG; originally built for the Google Cloud Rapid Agent Hackathon (MongoDB track).</p>
+        <p class="work-links mono">
+<a href="https://matchday-901040990547.us-central1.run.app/">Live demo</a><a href="https://github.com/Animesh452/wc2026-agent">Repo</a>        </p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">FastAPI</li><li class="mono">Gemini via Vertex AI (google-genai)</li><li class="mono">Cloud Run</li><li class="mono">MongoDB Atlas + MongoDB MCP</li><li class="mono">Google Cloud Discovery Engine</li><li class="mono">ESPN public API</li><li class="mono">pytest</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Case tracking system</h3>
+        <p class="work-why">The closest match to messy real-world input: staff notes that had to become reliable structured data.</p>
+        <p class="work-desc">Extended a Python document-automation pipeline to track every case in a Google Sheet, owning the slice that turns staff free-text notes into validated sheet updates that never fail silently.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">pytest</li><li class="mono">Google Sheets API (gspread + raw API)</li><li class="mono">Dropbox API</li><li class="mono">regex</li><li class="mono">difflib</li><li class="mono">GitHub rulesets / PR review</li>        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="fit">
+    <h2 class="block-title"><span class="idx">3</span> Direct fit</h2>
+    <div class="fit-ledger">
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>AI systems grounded in real inputs: documents, specs, standards and edge cases</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Social media pipeline: the critic checks every claim against the practice's own website content, and in the model comparison we co-ran, one candidate was dropped for fabricating credentials.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Evaluation tooling that measures quality</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>MatchDay: a 28-query hand-labeled retrieval eval showed the default relevance threshold was discarding correct results. Changing it raised hit@2 from 0.583 to 0.917 and MRR from 0.583 to 0.894.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Reliability: reduce failures, improve repeatability</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Case tracking system: close to 300 pytest tests, checked by deliberately breaking each behavior. A check against the first tab, where cases live, caught a bug that would have silently overwritten stored data on every run.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="logistics">
+    <h2 class="block-title"><span class="idx">4</span> Logistics</h2>
+    <div class="prose small">
+<p>Open to relocating for the role. Start date would depend on work authorization and relocation, which I'm happy to discuss.</p>    </div>
+  </section>
+
+  <footer class="block contact" id="contact">
+    <h2 class="block-title"><span class="idx">5</span> Contact</h2>
+    <ul class="contact-list">
+<li><a href="https://animesh452.github.io/for/resume/b/Animesh_Kumar_Resume.pdf">Resume</a></li><li><a href="https://linkedin.com/in/animeshk452">LinkedIn</a></li><li><a href="https://github.com/Animesh452">GitHub</a></li><li><a href="https://animesh452.github.io">Portfolio</a></li>    </ul>
+  </footer>
+
+</main>
+</body>
+</html>
