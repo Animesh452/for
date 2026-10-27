@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Animesh Kumar — Karumi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <p class="letterhead mono">Prepared for Karumi — Forward Deployed Engineer</p>
+    <h1 class="name">Animesh Kumar</h1>
+    <p class="positioning">AI/ML engineer who ships agentic systems end to end, from retrieval design to production deployment.</p>
+  </header>
+
+  <section class="block" id="why">
+    <h2 class="block-title"><span class="idx">1</span> Why Karumi</h2>
+    <div class="prose">
+<p>The part of my work at Trinity Tree, a clinical psychology practice, that taught me the most is what Karumi’s FDE role describes: keeping an AI system working in a real environment. I co-built an LLM pipeline there that has been live with real clinical reviewers since mid-September, and much of the work came after launch. When a clinician's approve click failed after idle periods, Cloud Run metrics showed cold starts and ruled out my own memory-leak hypothesis.</p><p>An agent that talks, listens and clicks through a customer's product on a live call has far more edge cases than a daily post, and every customer UI adds new ones. I want to be the person who finds them in deployment and turns them into clear feedback for the product team.</p>    </div>
+  </section>
+
+  <section class="block" id="work">
+    <h2 class="block-title"><span class="idx">2</span> Relevant work</h2>
+    <div class="work-list">
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Social media pipeline</h3>
+        <p class="work-why">A live LLM system used by real reviewers, where rollout, monitoring and production debugging were the day-to-day work.</p>
+        <p class="work-desc">Co-built a LangGraph pipeline on Google Cloud that drafts daily social posts, fact-checks them with a second provider's model, and publishes only after a clinician approves by email.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">LangGraph</li><li class="mono">OpenAI GPT-5.5</li><li class="mono">Gemini 3.5 Flash (Vertex AI)</li><li class="mono">Cloud Run</li><li class="mono">Cloud Scheduler</li><li class="mono">Firestore</li><li class="mono">LangSmith</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>MatchDay</h3>
+        <p class="work-why">A deployed tool-calling agent built solo, with retries, failed-turn rollback, and an eval that found why retrieval came back empty.</p>
+        <p class="work-desc">Conversational football agent on Cloud Run: custom 21-tool Gemini loop with MongoDB MCP and evaluated Discovery Engine RAG; originally built for the Google Cloud Rapid Agent Hackathon (MongoDB track).</p>
+        <p class="work-links mono">
+<a href="https://matchday-901040990547.us-central1.run.app/">Live demo</a><a href="https://github.com/Animesh452/wc2026-agent">Repo</a>        </p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">FastAPI</li><li class="mono">Gemini via Vertex AI (google-genai)</li><li class="mono">Cloud Run</li><li class="mono">MongoDB Atlas + MongoDB MCP</li><li class="mono">Google Cloud Discovery Engine</li><li class="mono">ESPN public API</li><li class="mono">pytest</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Case tracking system</h3>
+        <p class="work-why">The closest match to messy real-world input: staff notes that had to become reliable structured data.</p>
+        <p class="work-desc">Extended a Python document-automation pipeline to track every case in a Google Sheet, owning the slice that turns staff free-text notes into validated sheet updates that never fail silently.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">pytest</li><li class="mono">Google Sheets API (gspread + raw API)</li><li class="mono">Dropbox API</li><li class="mono">regex</li><li class="mono">difflib</li><li class="mono">GitHub rulesets / PR review</li><li class="mono">Windows Task Scheduler</li>        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="fit">
+    <h2 class="block-title"><span class="idx">3</span> Direct fit</h2>
+    <div class="fit-ledger">
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Roll out, validate and maintain an AI system in a real environment</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Social media pipeline: when LinkedIn went two weeks without posting, logs showed the token refresh never ran and the service account couldn't write the secret. I granted the narrowest role that fixed it and confirmed with a real post.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Debugging systems and finding root causes</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>MatchDay: a 28-query hand-labeled eval showed Discovery Engine's default relevance threshold was discarding correct results; 10 of the 24 answerable queries returned nothing. Changing it raised hit@2 from 0.583 to 0.917.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Strong attention to detail and a quality-first approach</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Case tracking system: close to 300 pytest tests, checked by deliberately breaking each behavior. A check against the real first tab caught a bug that would have silently overwritten stored data on every run.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Empathy for users and translating real-world issues into clear product feedback</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Case tracking: the office assistant's answers reshaped the note format around her own shorthand. Social pipeline: weekly stakeholder sprints, and the clinical lead's sign-off before using a palette resembling one he'd rejected.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="logistics">
+    <h2 class="block-title"><span class="idx">4</span> Logistics</h2>
+    <div class="prose small">
+<p>Open to relocating anywhere for the role. Currently authorized to work in the US on F-1 OPT and eligible for the 24-month STEM OPT extension with an E-Verify employer, which would cover me through May 2029; H-1B sponsorship would be needed after that. Available to start within two to three weeks of an offer, allowing for notice period and relocation.</p>    </div>
+  </section>
+
+  <footer class="block contact" id="contact">
+    <h2 class="block-title"><span class="idx">5</span> Contact</h2>
+    <ul class="contact-list">
+<li><a href="https://animesh452.github.io/for/resume/b/Animesh_Kumar_Resume.pdf">Resume</a></li><li><a href="https://linkedin.com/in/animeshk452">LinkedIn</a></li><li><a href="https://github.com/Animesh452">GitHub</a></li><li><a href="https://animesh452.github.io">Portfolio</a></li>    </ul>
+  </footer>
+
+</main>
+</body>
+</html>
