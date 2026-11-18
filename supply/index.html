@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Animesh Kumar — SUPPLY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script data-goatcounter="https://animesh452.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <p class="letterhead mono">Prepared for SUPPLY — AI & Marketing Technology Specialist</p>
+    <h1 class="name">Animesh Kumar</h1>
+    <p class="positioning">AI engineer who turns manual processes into AI-powered workflows, from first prototype to production.</p>
+  </header>
+
+  <section class="block" id="why">
+    <h2 class="block-title"><span class="idx">1</span> Why SUPPLY</h2>
+    <div class="prose">
+<p>SUPPLY's first focus, making the agency's own operations work better, is the kind of work I've been doing at Trinity Tree, a clinical psychology practice. The closest piece is marketing automation: the practice's social posts, drafted on a schedule and published to LinkedIn, Instagram and Facebook through their APIs. It started as a local n8n prototype I built, and my teammate and I rebuilt it as a LangGraph pipeline that has been live since mid-September.</p><p>Media and advertising are new to me, and the posting is clear that the business knowledge sits with your media, strategy and analytics teams. What I'd bring is the habit of asking the people doing the work how they do it before building anything.</p>    </div>
+  </section>
+
+  <section class="block" id="work">
+    <h2 class="block-title"><span class="idx">2</span> Relevant work</h2>
+    <div class="work-list">
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Social media pipeline</h3>
+        <p class="work-why">The closest match to this role: marketing automation that drafts posts on a schedule and publishes to LinkedIn, Instagram and Facebook through their APIs.</p>
+        <p class="work-desc">Co-built a LangGraph pipeline on Google Cloud that drafts daily social posts, fact-checks them with a second provider's model, and publishes only after a clinician approves by email.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">LangGraph</li><li class="mono">OpenAI GPT-5.5</li><li class="mono">Gemini 3.5 Flash (Vertex AI)</li><li class="mono">Cloud Run</li><li class="mono">Cloud Scheduler</li><li class="mono">LinkedIn API</li><li class="mono">Meta Graph API</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>Trinity Tree (IT Specialist / Data Scientist): Case tracking system</h3>
+        <p class="work-why">Internal tooling for non-technical colleagues: staff free-text notes turned into validated updates in a Google Sheet.</p>
+        <p class="work-desc">Extended a Python document-automation pipeline to track every case in a Google Sheet, owning the slice that turns staff free-text notes into validated sheet updates that never fail silently.</p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">Google Sheets API (gspread + raw API)</li><li class="mono">Dropbox API</li><li class="mono">pytest</li><li class="mono">regex</li><li class="mono">difflib</li><li class="mono">Windows Task Scheduler</li><li class="mono">GitHub rulesets / PR review</li>        </ul>
+      </article>
+      <article class="work-item">
+        <h3>MatchDay</h3>
+        <p class="work-why">A personal project, built solo: an agent wired to MongoDB through MCP, ESPN's public API and Gemini's grounded search, running as a live Cloud Run app.</p>
+        <p class="work-desc">Conversational football agent on Cloud Run: custom 21-tool Gemini loop with MongoDB MCP and evaluated Discovery Engine RAG.</p>
+        <p class="work-links mono">
+<a href="https://matchday-901040990547.us-central1.run.app/">Live demo</a><a href="https://github.com/Animesh452/wc2026-agent">Repo</a>        </p>
+        <ul class="tags">
+<li class="mono">Python</li><li class="mono">FastAPI</li><li class="mono">Gemini via Vertex AI (google-genai)</li><li class="mono">Cloud Run</li><li class="mono">MongoDB Atlas + MongoDB MCP</li><li class="mono">Google Cloud Discovery Engine</li><li class="mono">ESPN public API</li><li class="mono">pytest</li>        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="fit">
+    <h2 class="block-title"><span class="idx">3</span> Direct fit</h2>
+    <div class="fit-ledger">
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Building automations using n8n or similar platforms</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Social media pipeline: I built a local n8n prototype that, in testing, published posts with images to LinkedIn and Facebook end to end, routing LinkedIn through HTTP Request nodes when the native node failed.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Work with colleagues who aren't technical specialists to understand problems and help them adopt solutions</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Case tracking system: I asked the office assistant how she worked and read dozens of past schedules. Her answers led me to drop a planned field and build the note format around her own shorthand.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Using AI-assisted development tools to build applications</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Case tracking system: I used Claude as a pairing tool for code, tests and reviews, while making the design decisions and running every change against a sandbox sheet. Close to 300 pytest tests back it.</div>
+      </div>
+      <div class="fit-row">
+        <div class="fit-req"><span class="fit-label mono">Requirement</span>Good judgment about what to prioritize and when a simpler solution is better</div>
+        <div class="fit-connector" aria-hidden="true"></div>
+        <div class="fit-evidence"><span class="fit-label mono">Evidence</span>Social media pipeline: in a local n8n prototype, I replaced website scraping with a hand-curated content brief. Raw HTML wasted tokens and added noise; the brief kept content controlled and brand-safe, with no per-run network dependency.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="logistics">
+    <h2 class="block-title"><span class="idx">4</span> Logistics</h2>
+    <div class="prose small">
+<p>Based in San Francisco and open to relocating to Boulder or Denver for the role. Currently authorized to work in the US on F-1 OPT and eligible for the 24-month STEM OPT extension with an E-Verify employer, which would cover me through May 2029; H-1B sponsorship would be needed after that. Available to start within two to three weeks of an offer, allowing for notice period and relocation.</p>    </div>
+  </section>
+
+  <footer class="block contact" id="contact">
+    <h2 class="block-title"><span class="idx">5</span> Contact</h2>
+    <ul class="contact-list">
+<li><a href="https://animesh452.github.io/for/resume/b/Animesh_Kumar_Resume.pdf">Resume</a></li><li><a href="https://linkedin.com/in/animeshk452">LinkedIn</a></li><li><a href="https://github.com/Animesh452">GitHub</a></li><li><a href="https://animesh452.github.io">Portfolio</a></li>    </ul>
+  </footer>
+
+</main>
+</body>
+</html>
